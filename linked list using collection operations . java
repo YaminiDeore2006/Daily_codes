@@ -1,0 +1,38 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        LinkedList<String> ll = new LinkedList<String>();
+        
+        //Add elements to first and last
+        
+        ll.addFirst("a");
+        ll.addFirst("b");
+        ll.addLast("c");
+        System.out.println(ll);
+        System.out.println(ll.size());
+        // Iterate list 
+        
+        for(int i = 0 ; i < ll.size() ; i++)
+        {
+            // if(ll.get(i) == value) -- for compare
+            System.out.print(ll.get(i) + " -> ");
+        }
+        
+        System.out.println("NULL");
+        System.out.println(ll);
+        System.out.println(ll.size());
+        
+        // Remove elements
+        ll.remove(0);
+        System.out.println(ll);
+        
+        ll.removeFirst();
+        System.out.println(ll);
+        
+        ll.removeLast();
+        System.out.println(ll);
+    }
+}
